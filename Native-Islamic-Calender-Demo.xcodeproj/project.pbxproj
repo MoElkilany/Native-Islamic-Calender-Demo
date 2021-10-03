@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		0AF1472F270A42E60073CF06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF1472E270A42E60073CF06 /* AppDelegate.swift */; };
-		0AF14731270A42E60073CF06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF14730270A42E60073CF06 /* SceneDelegate.swift */; };
-		0AF14733270A42E60073CF06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF14732270A42E60073CF06 /* ViewController.swift */; };
-		0AF14736270A42E60073CF06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF14734270A42E60073CF06 /* Main.storyboard */; };
 		0AF14738270A42E60073CF06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF14737270A42E60073CF06 /* Assets.xcassets */; };
 		0AF1473B270A42E60073CF06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF14739270A42E60073CF06 /* LaunchScreen.storyboard */; };
+		0AF14749270A440E0073CF06 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF14747270A440E0073CF06 /* CalendarVC.swift */; };
+		0AF1474A270A440E0073CF06 /* CalendarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AF14748270A440E0073CF06 /* CalendarVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0AF1472B270A42E60073CF06 /* Native-Islamic-Calender-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Native-Islamic-Calender-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF1472E270A42E60073CF06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0AF14730270A42E60073CF06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0AF14732270A42E60073CF06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0AF14735270A42E60073CF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0AF14737270A42E60073CF06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AF1473A270A42E60073CF06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AF1473C270A42E60073CF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF14747270A440E0073CF06 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		0AF14748270A440E0073CF06 /* CalendarVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,54 @@
 		0AF1472D270A42E60073CF06 /* Native-Islamic-Calender-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				0AF1472E270A42E60073CF06 /* AppDelegate.swift */,
-				0AF14730270A42E60073CF06 /* SceneDelegate.swift */,
-				0AF14732270A42E60073CF06 /* ViewController.swift */,
-				0AF14734270A42E60073CF06 /* Main.storyboard */,
-				0AF14737270A42E60073CF06 /* Assets.xcassets */,
-				0AF14739270A42E60073CF06 /* LaunchScreen.storyboard */,
-				0AF1473C270A42E60073CF06 /* Info.plist */,
+				0AF14745270A438E0073CF06 /* Sceens */,
+				0AF14744270A437D0073CF06 /* Board */,
+				0AF14743270A43690073CF06 /* Resources */,
+				0AF14742270A43600073CF06 /* Core */,
 			);
 			path = "Native-Islamic-Calender-Demo";
+			sourceTree = "<group>";
+		};
+		0AF14742270A43600073CF06 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0AF1473C270A42E60073CF06 /* Info.plist */,
+				0AF1472E270A42E60073CF06 /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0AF14743270A43690073CF06 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0AF14737270A42E60073CF06 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0AF14744270A437D0073CF06 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				0AF14739270A42E60073CF06 /* LaunchScreen.storyboard */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		0AF14745270A438E0073CF06 /* Sceens */ = {
+			isa = PBXGroup;
+			children = (
+				0AF14746270A43F60073CF06 /* CalendarVC */,
+			);
+			path = Sceens;
+			sourceTree = "<group>";
+		};
+		0AF14746270A43F60073CF06 /* CalendarVC */ = {
+			isa = PBXGroup;
+			children = (
+				0AF14747270A440E0073CF06 /* CalendarVC.swift */,
+				0AF14748270A440E0073CF06 /* CalendarVC.xib */,
+			);
+			path = CalendarVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +162,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AF1473B270A42E60073CF06 /* LaunchScreen.storyboard in Resources */,
+				0AF1474A270A440E0073CF06 /* CalendarVC.xib in Resources */,
 				0AF14738270A42E60073CF06 /* Assets.xcassets in Resources */,
-				0AF14736270A42E60073CF06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +174,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF14733270A42E60073CF06 /* ViewController.swift in Sources */,
 				0AF1472F270A42E60073CF06 /* AppDelegate.swift in Sources */,
-				0AF14731270A42E60073CF06 /* SceneDelegate.swift in Sources */,
+				0AF14749270A440E0073CF06 /* CalendarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0AF14734270A42E60073CF06 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0AF14735270A42E60073CF06 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0AF14739270A42E60073CF06 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +316,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZUMG9R88LL;
-				INFOPLIST_FILE = "Native-Islamic-Calender-Demo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Native-Islamic-Calender-Demo/Core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Native-Islamic-Calender-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,7 +335,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZUMG9R88LL;
-				INFOPLIST_FILE = "Native-Islamic-Calender-Demo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Native-Islamic-Calender-Demo/Core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +343,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Native-Islamic-Calender-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

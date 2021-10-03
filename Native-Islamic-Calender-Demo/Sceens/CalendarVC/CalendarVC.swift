@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CalendarVC.swift
 //  Native-Islamic-Calender-Demo
 //
 //  Created by Mohamed Elkilany on 03/10/2021.
@@ -7,13 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalendarVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
-
-
 }
-
